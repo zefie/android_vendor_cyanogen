@@ -1,7 +1,4 @@
-# T-Mobile theme engine
+# Theme packages
 PRODUCT_PACKAGES += \
-       ThemeManager \
-       ThemeChooser \
-       com.tmobile.themes \
        Androidian \
        Cyanbread
