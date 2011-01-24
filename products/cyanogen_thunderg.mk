@@ -7,7 +7,6 @@ $(call inherit-product, vendor/cyanogen/products/common.mk)
 # Include GSM stuff
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 
-
 PRODUCT_NAME := cyanogen_thunderg
 PRODUCT_BRAND := LGE
 PRODUCT_DEVICE := thunderg
@@ -18,12 +17,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=optimus_one BUILD_ID=GRH55 BUILD_DI
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-legend.map
 
 # Live wallpaper packages
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \
     VisualizationWallpapers \
-    librs_jni
+    librs_jni \
+    FM \
+    LatinIME
 CYANOGEN_WITH_GOOGLE := true
 CYANOGEN_NIGHTLY := true
 
