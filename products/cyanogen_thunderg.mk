@@ -1,38 +1,33 @@
-# Inherit AOSP device configuration for legend.
-$(call inherit-product, device/lge/thunderg/device_thunderg.mk)
+$(call inherit-product, build/target/product/full_base.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
+# Inherit AOSP device configuration for legend.
+$(call inherit-product, device/lge/thunderg/device_thunderg.mk)
+
 # Include GSM stuff
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 
-PRODUCT_NAME := cyanogen_thunderg
 PRODUCT_BRAND := LGE
 PRODUCT_DEVICE := thunderg
 PRODUCT_MODEL := LG-P500
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=optimus_one BUILD_ID=GRH55 BUILD_DISPLAY_ID=GRH55 BUILD_FINGERPRINT=google/soju/crespo:2.3/GRH55/79397:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3 GRH55 79397 release-keys"
-
-#PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-legend.map
+PRODUCT_NAME := cyanogen_thunderg
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=thunderg BUILD_UTC_DATE=0
 
 # Live wallpaper packages
 PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    VisualizationWallpapers \
-    librs_jni \
-    FM \
-    LatinIME
-CYANOGEN_WITH_GOOGLE := true
-CYANOGEN_NIGHTLY := true
+        LiveWallpapers \
+        LiveWallpapersPicker \
+        MagicSmokeWallpapers \
+        VisualizationWallpapers
 
-#PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/legend
+CYANOGEN_NIGHTLY := true
 
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Thuderg
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Thuderg-mik
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
