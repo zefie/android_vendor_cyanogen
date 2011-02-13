@@ -7,6 +7,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_crespo.mk \
     $(LOCAL_DIR)/cyanogen_espresso.mk \
     $(LOCAL_DIR)/cyanogen_hero.mk \
+    $(LOCAL_DIR)/cyanogen_heroc.mk \
     $(LOCAL_DIR)/cyanogen_inc.mk \
     $(LOCAL_DIR)/cyanogen_generic.mk \
     $(LOCAL_DIR)/cyanogen_glacier.mk \
@@ -22,4 +23,3 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_z71.mk \
     $(LOCAL_DIR)/cyanogen_thunderg.mk
 #    $(LOCAL_DIR)/cyanogen_dream_sapphire.mk \
-#    $(LOCAL_DIR)/cyanogen_heroc.mk \
