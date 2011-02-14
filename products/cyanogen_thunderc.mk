@@ -6,9 +6,6 @@ $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 # Inherit AOSP device configuration for legend.
 $(call inherit-product, device/lge/thunderc/device_thunderc.mk)
 
-# Include GSM stuff
-$(call inherit-product, vendor/cyanogen/products/gsm.mk)
-
 PRODUCT_BRAND := LGE
 PRODUCT_DEVICE := thunderc
 PRODUCT_MODEL := LG670
