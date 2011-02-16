@@ -8,7 +8,7 @@ $(call inherit-product, device/lge/thunderc/device_thunderc.mk)
 
 PRODUCT_BRAND := LGE
 PRODUCT_DEVICE := thunderc
-PRODUCT_MODEL := LG670
+PRODUCT_MODEL := LS670
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_NAME := cyanogen_thunderc
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=thunderc BUILD_UTC_DATE=0
