@@ -25,8 +25,8 @@ Maintainers:
 * Vision (G2/Desire Z): Cyanogen
 * Geeksphone ONE: arcee
 * Z71 (Boston, G1305, XT502, A60, Blaze, others): arcee
-* Wildfire: Jacob Crawley
-* NVidia Harmony: bekit
+* Wildfire: Jacob Crawley, Arne Coucheron
+* NVidia Harmony: bekit, pershoot
 * Ace (Desire HD): Kali-
 * Glacier (MT4G): Zinx, Kmobs
 * Click (Tattoo): KalimochoAz
