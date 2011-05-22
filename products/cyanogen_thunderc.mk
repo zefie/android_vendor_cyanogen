@@ -10,7 +10,7 @@ $(call inherit-product, device/lge/thunderc/device_thunderc.mk)
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
 PRODUCT_BRAND := LGE
-PRODUCT_DEVICE := thunder 
+PRODUCT_DEVICE := thunderc 
 PRODUCT_MODEL := LS670
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_NAME := cyanogen_thunderc
