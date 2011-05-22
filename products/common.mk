@@ -3,7 +3,7 @@ PRODUCT_NAME := cyanogen
 PRODUCT_BRAND := cyanogen
 PRODUCT_DEVICE := generic
 
-#PRODUCT_PACKAGES += ADWLauncher
+PRODUCT_PACKAGES += ADWLauncher
 
 ifdef CYANOGEN_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
     CMParts \
     CMStats \
     CMUpdateNotify \
-    CMWallpapers \
     DSPManager \
     libcyanogen-dsp \
     Pacman
@@ -85,15 +84,15 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
-#PRODUCT_COPY_FILES +=  \
-#    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
+PRODUCT_COPY_FILES +=  \
+    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Always run in insecure mode, enables root on user build variants
-#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
 ifdef CYANOGEN_WITH_GOOGLE
     PRODUCT_COPY_FILES += \
