@@ -4,7 +4,7 @@ $(call inherit-product, build/target/product/full_base.mk)
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 # Inherit AOSP device configuration for legend.
-$(call inherit-product, device/lge/thunderg/device_thunderc.mk)
+$(call inherit-product, device/lge/thunderc/device_thunderc.mk)
 
 # Include FM-Radio stuff (does not work at this moment)
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
